@@ -33,18 +33,15 @@ function Get-ReleaseByTag {
         [string]$ApiBase
     )
 
-    try {
-        return Invoke-RestMethod `
-            -Uri "$ApiBase/releases/tags/$Tag" `
-            -Headers $Headers `
-            -Method Get
-    }
-    catch {
-        if ($_.Exception.Response.StatusCode.value__ -eq 404) {
-            return $null
-        }
-        throw
-    }
+    $releases = Invoke-RestMethod `
+        -Uri "$ApiBase/releases?per_page=100" `
+        -Headers $Headers `
+        -Method Get
+
+    return @($releases) |
+        Where-Object { $_.tag_name -eq $Tag } |
+        Sort-Object created_at |
+        Select-Object -First 1
 }
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
