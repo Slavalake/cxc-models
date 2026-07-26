@@ -61,7 +61,8 @@ if (-not (Test-Path -LiteralPath $checksumsPath)) {
 
 $manifest = Get-Content -Raw -LiteralPath $manifestPath | ConvertFrom-Json
 $modelAssets = foreach ($model in $manifest.models) {
-    $path = Join-Path $resolvedModelDirectory $model.asset
+    $localFilename = if ($model.filename) { $model.filename } else { $model.asset }
+    $path = Join-Path $resolvedModelDirectory $localFilename
     if (-not (Test-Path -LiteralPath $path)) {
         throw "Model asset is missing: $path"
     }
@@ -69,10 +70,15 @@ $modelAssets = foreach ($model in $manifest.models) {
     $item = Get-Item -LiteralPath $path
     $actualHash = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
     if ($item.Length -ne [int64]$model.bytes -or $actualHash -ne $model.sha256) {
-        throw "Model verification failed: $($model.asset)"
+        throw "Model verification failed: $localFilename"
     }
 
-    $item
+    [pscustomobject]@{
+        Name = $model.asset
+        Path = $item.FullName
+        Length = $item.Length
+        Hash = $actualHash
+    }
 }
 
 $credential = Get-GitHubCredential
@@ -105,15 +111,20 @@ try {
         Write-Output "Created draft release $Tag."
     }
 
-    $assetsToUpload = @(
-        Get-Item -LiteralPath $manifestPath
-        Get-Item -LiteralPath $checksumsPath
-        $modelAssets
-    )
+    $assetsToUpload = @()
+    foreach ($metadataPath in @($manifestPath, $checksumsPath)) {
+        $metadataItem = Get-Item -LiteralPath $metadataPath
+        $assetsToUpload += [pscustomobject]@{
+            Name = $metadataItem.Name
+            Path = $metadataItem.FullName
+            Length = $metadataItem.Length
+            Hash = (Get-FileHash -LiteralPath $metadataItem.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+        }
+    }
+    $assetsToUpload += $modelAssets
 
     foreach ($asset in $assetsToUpload) {
-        $assetHash = (Get-FileHash -LiteralPath $asset.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
-        $expectedDigest = "sha256:$assetHash"
+        $expectedDigest = "sha256:$($asset.Hash)"
         $existingAsset = @($release.assets) |
             Where-Object { $_.name -eq $asset.Name } |
             Select-Object -First 1
@@ -140,7 +151,7 @@ try {
             -Headers $headers `
             -Method Post `
             -ContentType "application/octet-stream" `
-            -InFile $asset.FullName | Out-Null
+            -InFile $asset.Path | Out-Null
         Write-Output "Uploaded asset: $($asset.Name)"
 
         $release = Invoke-RestMethod `

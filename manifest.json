@@ -19,7 +19,8 @@
       "bytes": 6111253,
       "sha256": "439fa24060c98c52834603aa36a5408be65ef6199cc057b1070a9072943fddd4",
       "bundled": true,
-      "recommended": true
+      "recommended": true,
+      "filename": "Universal_FP16_416.cent"
     },
     {
       "game": "Universal",
@@ -31,7 +32,8 @@
       "bytes": 12157000,
       "sha256": "483e0c6e576edfe82edf25fd56e6e3f6cb30cb2f13d98a35683a8b7c8fcdbb41",
       "bundled": true,
-      "recommended": false
+      "recommended": false,
+      "filename": "Universal_416.cent"
     },
     {
       "game": "Universal",
@@ -43,7 +45,8 @@
       "bytes": 6159698,
       "sha256": "53be1eace7c542d102615e7932f84d530776011c7c913d9e29c756f8dac40f60",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Universal_FP16.cent"
     },
     {
       "game": "Universal",
@@ -55,7 +58,8 @@
       "bytes": 12238239,
       "sha256": "c1eb7e4e64e3fa7ea8b2d99055cf3e8c6c451a2e1cb50f2e12028ab8ca3d63d9",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Universal.cent"
     },
     {
       "game": "Valorant",
@@ -67,7 +71,8 @@
       "bytes": 6107777,
       "sha256": "1349c9b267628332bc81d600169af437db8112c74780daa0d5dcda558ad07937",
       "bundled": false,
-      "recommended": true
+      "recommended": true,
+      "filename": "Valorant_FP16_416.cent"
     },
     {
       "game": "Valorant",
@@ -79,7 +84,8 @@
       "bytes": 12153931,
       "sha256": "6db2f41f4c62d7836f0fb4160b708ab7bdd70a8f7ab6594ee6cedccfec2f6461",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Valorant_416.cent"
     },
     {
       "game": "Valorant",
@@ -91,7 +97,8 @@
       "bytes": 6079872,
       "sha256": "56e926c87cfc4f0ed30fbb114b2884e9832e01f610620b797f02a2eee4028056",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Valorant_FP16.cent"
     },
     {
       "game": "Valorant",
@@ -103,7 +110,8 @@
       "bytes": 12098092,
       "sha256": "91e6b4382323a693f8f294962e4c1692d1c1809342797ee2f58e9dddb5efd69b",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Valorant.cent"
     },
     {
       "game": "CS2",
@@ -115,7 +123,8 @@
       "bytes": 6111149,
       "sha256": "17fd94501d60c6d06582ebddbc7b2c0c55a4531dab9e8924cca3703db402eb69",
       "bundled": false,
-      "recommended": true
+      "recommended": true,
+      "filename": "CS2_FP16_416.cent"
     },
     {
       "game": "CS2",
@@ -127,7 +136,8 @@
       "bytes": 12156896,
       "sha256": "821542491f13de76ce7deb6c1d0ce4e90c58f1a2c3482f0e5d01c89e18722446",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "CS2_416.cent"
     },
     {
       "game": "CS2",
@@ -139,7 +149,8 @@
       "bytes": 6159594,
       "sha256": "717f6382a6119ea6e17fe4a70001f5dbce0e38e58f1121cf9360fbb554c057fa",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "CS2_FP16.cent"
     },
     {
       "game": "CS2",
@@ -151,7 +162,8 @@
       "bytes": 12238135,
       "sha256": "03c7a0119383ae5bbf1f3410a4301aaab6017571ee3692354a6e2874894fbea4",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "CS2.cent"
     },
     {
       "game": "Fortnite",
@@ -163,7 +175,8 @@
       "bytes": 6107739,
       "sha256": "d33eef95b0a72fc8b17bff6e47ea8293956724237911cab2c24b6bea81b34a6c",
       "bundled": false,
-      "recommended": true
+      "recommended": true,
+      "filename": "Fortnite_FP16_416.cent"
     },
     {
       "game": "Fortnite",
@@ -175,7 +188,8 @@
       "bytes": 12153893,
       "sha256": "412ab5c9c4c34b2bd8eb2c6568b4233a0ab6a89e7fe69e4910f98cf2a97d50f8",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Fortnite_416.cent"
     },
     {
       "game": "Fortnite",
@@ -187,7 +201,8 @@
       "bytes": 6156325,
       "sha256": "c9ceafd9283c71925c1ebe252a5743e16aca4364a421aeb5e136e8c14fe47bb8",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Fortnite_FP16.cent"
     },
     {
       "game": "Fortnite",
@@ -199,7 +214,8 @@
       "bytes": 12250985,
       "sha256": "b15d89fb7e8eae17983c0f40ad866be756f22233f3ed5aa961fc4cd61e521d2d",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Fortnite.cent"
     },
     {
       "game": "Apex Legends",
@@ -211,7 +227,8 @@
       "bytes": 18948937,
       "sha256": "8a6872377be3913335d8664e1038f478a38804a7a2818880fca94043ebeec329",
       "bundled": false,
-      "recommended": true
+      "recommended": true,
+      "filename": "ApexLegends_FP16_416.cent"
     },
     {
       "game": "Apex Legends",
@@ -223,7 +240,8 @@
       "bytes": 37809779,
       "sha256": "7a437457467210d65de13d0290164f699749ad8aa4e429258858545598f3ce6f",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "ApexLegends_416.cent"
     },
     {
       "game": "Apex Legends",
@@ -235,7 +253,8 @@
       "bytes": 19018446,
       "sha256": "e7f40e109fb9da0f7cdf8df5d820d4f7a56a00d0b256ff70746c69d0786b55f1",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "ApexLegends_FP16.cent"
     },
     {
       "game": "Apex Legends",
@@ -247,7 +266,8 @@
       "bytes": 37927794,
       "sha256": "d6d111599a539d4eebe2d2ed04139072001bc3c21d7d57a8b765a75658452d2d",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "ApexLegends.cent"
     },
     {
       "game": "Rust",
@@ -255,11 +275,12 @@
       "profile": "low",
       "resolution": 416,
       "precision": "fp16",
-      "asset": "Rust 1_FP16_416.cent",
+      "asset": "Rust.1_FP16_416.cent",
       "bytes": 6111094,
       "sha256": "d74245987d2fae3993576589556bf4d1e3def6257e47f3f0a6be36ff89865fcb",
       "bundled": false,
-      "recommended": true
+      "recommended": true,
+      "filename": "Rust 1_FP16_416.cent"
     },
     {
       "game": "Rust",
@@ -267,11 +288,12 @@
       "profile": "low",
       "resolution": 416,
       "precision": "fp32",
-      "asset": "Rust 1_416.cent",
+      "asset": "Rust.1_416.cent",
       "bytes": 12141171,
       "sha256": "90e58442b82dfc9a231f3c8cc416281e33341433d947e125abc1ba812182687a",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Rust 1_416.cent"
     },
     {
       "game": "Rust",
@@ -279,11 +301,12 @@
       "profile": "quality",
       "resolution": 416,
       "precision": "fp16",
-      "asset": "Rust 2_FP16_416.cent",
+      "asset": "Rust.2_FP16_416.cent",
       "bytes": 6111143,
       "sha256": "786927c736ad5e39cd512b5bd3c1b85d1cde580fb7023d664788aa7aa28c82e0",
       "bundled": false,
-      "recommended": true
+      "recommended": true,
+      "filename": "Rust 2_FP16_416.cent"
     },
     {
       "game": "Rust",
@@ -291,11 +314,12 @@
       "profile": "quality",
       "resolution": 416,
       "precision": "fp32",
-      "asset": "Rust 2_416.cent",
+      "asset": "Rust.2_416.cent",
       "bytes": 12141220,
       "sha256": "ee55678306b17284aa2f61e1137a53cef4e5c100529f36f64c15045dad126ca7",
       "bundled": false,
-      "recommended": false
+      "recommended": false,
+      "filename": "Rust 2_416.cent"
     }
   ]
 }
