@@ -3,7 +3,7 @@
   "channel": "stable",
   "release_tag": "models-v1",
   "repository": "Slavalake/cxc-models",
-  "generated_utc": "2026-07-26T15:00:16Z",
+  "generated_utc": "2026-08-19T10:45:00Z",
   "bundled_models": [
     "Universal_FP16_416.cent",
     "Universal_416.cent"
@@ -320,6 +320,19 @@
       "bundled": false,
       "recommended": false,
       "filename": "Rust 2_416.cent"
+    },
+    {
+      "game": "Rainbow Six Siege",
+      "variant": "Head",
+      "profile": "low",
+      "resolution": 320,
+      "precision": "fp32",
+      "asset": "R6_Head_320.cent",
+      "bytes": 12125036,
+      "sha256": "c08046278652e56c78c00440dcd299d78a44d6b2c71a5e75c4f67316db037e22",
+      "bundled": true,
+      "recommended": true,
+      "filename": "R6_Head_320.cent"
     },
     {
       "game": "Warzone",
