@@ -327,12 +327,12 @@
       "profile": "low",
       "resolution": 320,
       "precision": "fp32",
-      "asset": "WZ_50k_v2_320.cent",
+      "asset": "WZ_320.cent",
       "bytes": 10457331,
       "sha256": "ad4f2582f1c91e59f5efe1f8ec358cc70dcb093fdccb9fb70b28f5ccccf8cc76",
       "bundled": true,
       "recommended": true,
-      "filename": "WZ_50k_v2_320.cent"
+      "filename": "WZ_320.cent"
     }
   ]
 }
